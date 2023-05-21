@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
 
@@ -9,8 +10,9 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
+          Get started <Link href="/docs">Dashboard</Link> by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
+          <Link href="/tshoot">Tshoot</Link>
         </p>
         <div>
           <a
@@ -82,7 +84,7 @@ export default function Home() {
             Deploy <span>-&gt;</span>
           </h2>
           <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Instantly deploy your Next.js site  to a shareable URL with Vercel.
           </p>
         </a>
       </div>

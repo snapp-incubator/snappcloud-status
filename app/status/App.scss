@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.operational-icon{
+  color: green;
+  font: 80px;
+  animation: pulse-dot 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.not-operational-icon {
+  font: '80px';
+  color: 'green';
+}
+
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(.33);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.8);
+  }
+}
+
+
+.header{
+  background-color: black;
+  margin-bottom: 10pt;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+h1 {
+  margin: 15px;
+}
+
+p {
+  margin: 15px;
+}
+
+.warning-icon {
+  color: rgb(247, 161, 1);
+}
+
+.outage-icon {
+  color: rgb(236, 1, 1);
+}
+
+.guide {
+  margin: 15px;
+  width: 50%;
+  padding: 10px;
+}
